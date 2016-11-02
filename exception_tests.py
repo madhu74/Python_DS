@@ -12,4 +12,4 @@ try:
 	for word in fp:
 		print word
 except IOError as er:
-	print e
+	print er
