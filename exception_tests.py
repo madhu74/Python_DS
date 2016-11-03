@@ -13,3 +13,4 @@ try:
 		print word
 except IOError as er:
 	print er
+	
