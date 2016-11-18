@@ -22,7 +22,3 @@ oddnumber = double(oddnumber)
 print oddnumber()
 
 #the above alteration can be done by using decorators
-@double
-def anotherodd():
-	return 7
-print anotherodd()
