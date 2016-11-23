@@ -31,6 +31,10 @@ class SequenceIteratorT2(object):
 	def __getitem__(self,index):
 		return self._seq[index]
 
+	def __str__(self):
+		return "<" + str(self._seq[:]) + ">"
+
+""" If we have __len__(),__getitem__() we get default implementation of __iter__(),__next()__ and even __reversed__()"""
 
 if __name__ == '__main__':
 	obj1 = SequenceIteratorT1([2,4,3,6,2])
