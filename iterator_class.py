@@ -46,3 +46,11 @@ if __name__ == '__main__':
 	obj22 = iter(obj11)
 	for i in xrange(0,5):
 		print obj22.next()
+
+	print "Trying out reversed"	
+	k= reversed(obj11)
+	#k1= reversed(obj1) this will not work we have to implement the __reversed__() function for this to work
+	for i in k:
+		print i
+
+		
