@@ -15,7 +15,7 @@ class Vector(object):
 
 	def __add__(self,other):
 		if len(self._coordinate) != len(other._coordinate):
-			raise ValueError("The lenght of the two vectors should be same")
+			raise ValueError("The Dimensions of the two vectors should be same")
 		result = Vector(len(self))
 		for i in xrange(0,len(self)):
 			result._coordinate[i] = self._coordinate[i] + other._coordinate[i]
