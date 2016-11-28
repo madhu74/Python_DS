@@ -1,4 +1,4 @@
-""" This is a simple example of a typical inhereitance implementation please check how the super() is implemented
+""" This is a simple example of a typical inheritance implementation please check how the super() is implemented
     for python 3 we sue super().__init_()
     but for python 2 we use super(current_class_name,current_class_object_reference).__init__() also check banking function
 """
