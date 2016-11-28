@@ -40,7 +40,7 @@ if __name__ == '__main__':
 	obj1 = SequenceIteratorT1([2,4,3,6,2])
 	obj2 = iter(obj1)
 	for i in xrange(0,5):
-		print obj1.next()
+		print obj2.next()
 	print "Trying the second Class"
 	obj11 = SequenceIteratorT2([2,4,3,6,2])
 	obj22 = iter(obj11)
