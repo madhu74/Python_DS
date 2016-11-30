@@ -1,7 +1,0 @@
-http://stackoverflow.com/questions/9663562/what-is-difference-between-init-and-call-in-python
-http://stackoverflow.com/questions/14103903/init-or-call?noredirect=1&lq=1
-http://stackoverflow.com/questions/111234/what-is-a-callable-in-python
-http://stackoverflow.com/questions/100003/what-is-a-metaclass-in-python
-https://docs.python.org/3/reference/datamodel.html#object.__new__
-
-if __len__() exist then __bool__() is automatically defined.
