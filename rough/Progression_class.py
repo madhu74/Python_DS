@@ -42,6 +42,17 @@ class GeometricProgression(Progression):
 	def _advance(self):
 		self._current *= self._base
 
+class FibonacciProgression(Progression):
+	
+	def __init__(self,first=0,second=1):
+		super(FibonacciProgression,self).__init__(first)
+		self._previous = second - first 
+
+	def _advance(self):
+		self._previous,self._current = self._current,self._current+self._previous
+
+
+
 if __name__ =='__main__':
 	p = Progression()
 	p.print_progression(10)
@@ -52,3 +63,7 @@ if __name__ =='__main__':
 	print '-------Geometric progression------'
 	r = GeometricProgression(3,2)
 	r.print_progression(10)
+	print '-------Fibonacci progression------'
+	r = FibonacciProgression()
+	r.print_progression(10)
+	print dir(Progression)
