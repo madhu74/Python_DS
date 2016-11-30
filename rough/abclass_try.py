@@ -13,7 +13,7 @@ from abc import ABCMeta,abstractmethod
 
 class Sequence(object):
 	__metaclass__ = ABCMeta
-	
+	 
 	@abstractmethod
 	def __len__(self):      #We have to give return for abstract method in python 2.7 https://pymotw.com/2/abc/
 		return        
