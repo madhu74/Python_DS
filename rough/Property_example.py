@@ -1,6 +1,6 @@
 """dir(property())
 
-['__class__', '__delattr__', '__delete__', '__doc__', '__format__', '__get__', '__getattribute__', '__hash__', '__init__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__set__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'deleter', 'fdel', 'fget', 'fset', 'getter', 'setter'] 
+['__class__', '__delattr__', '__delete__', '__doc__',  '__format__', '__get__', '__getattribute__', '__hash__', '__init__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__set__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'deleter', 'fdel', 'fget', 'fset', 'getter', 'setter'] 
 Ref: https://www.programiz.com/python-programming/property
 """
 class MySampleClass(object):
