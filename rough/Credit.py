@@ -53,3 +53,4 @@ if __name__ == '__main__':
 	print my_account.getbalance()
 	my_account.charge(2.5)
 	print my_account.getbalance()
+	print my_account.__dict__
