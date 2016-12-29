@@ -12,7 +12,7 @@ def draw_line(tick_length,tick_lable=''):
 	print line
 
 def draw_interval(centerlength):
-	if centerlength > 0 :
+	if centerlength > 0 :         # stopping condition
 		draw_interval(centerlength-1)
 		draw_line(centerlength)
 		draw_interval(centerlength-1)
