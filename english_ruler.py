@@ -1,4 +1,9 @@
 # this is an exam for recursion, English ruler implementable.
+# three important steps, an interval with central tick lenght L contains
+#*an interval with central tick lenght L-1
+#a tick of length L
+#*an interval with central tick length l-1
+
 def draw_line(tick_length,tick_lable=''):
 	tick ="-"
 	line =tick*tick_length
