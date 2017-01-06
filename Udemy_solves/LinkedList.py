@@ -15,7 +15,6 @@ class LinkedList(object):
 	def InsertStart(self,data):
 		self._count = self._count + 1
 		newNode = Node(data)
-
 		if not self._head:
 			self._head = newNode
 		else:
@@ -40,3 +39,4 @@ if __name__ == '__main__':
 	myLL.InsertStart(20)
 	myLL.InsertStart(30)
 	print myLL.size2()
+	print myLL.size()
