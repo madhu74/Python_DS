@@ -16,4 +16,5 @@ def binary_search(data,target,start,stop):
 			#binary_search(data,target,start,mid-1)
 
 if __name__ =='__main__':
-	print binary_search([1,2,4,5,6,37,67],12,0,len([1,2,4,5,6,37,67]))
+	print binary_search([1,2,4,5,6,37,67],6,0,len([1,2,4,5,6,37,67]))
+	
