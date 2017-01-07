@@ -3,7 +3,7 @@ class Node(object):
 	
 	def __init__(self,data):
 		self._data = data
-		self.NextNode = None
+		self._NextNode = None
 
 class LinkedList(object):
 	
@@ -25,13 +25,31 @@ class LinkedList(object):
 	def size(self):
 		return self._count
 
+	#O(N) since we have to traverse all the way to the end
 	def size2(self):
 		total = 0
-		tempList = self._head
-		while tempList:
+		tempLL = self._head
+		while tempLL:
 			total  = total + 1
-			tempList = tempList.NextNode
+			tempLL = tempLL._NextNode
 		return total
+	#O(N) complexity since we have to traverse all the way to the end of the LinkedList to insert the data
+	def InsertEnd(self,data):
+		self._count = self._count + 1
+		newNode = Node(data)
+		tempLL = self._head
+		while tempLL._NextNode:
+			tempLL = tempLL._NextNode
+		tempLL._NextNode = newNode
+		#self._head = tempLL
+
+	def __str__(self):
+		tempLL = self._head
+		ll =[]
+		while tempLL:
+			ll.append(tempLL._data)
+			tempLL = tempLL._NextNode
+		return str(ll)
 
 if __name__ == '__main__':
 	myLL = LinkedList()
@@ -39,4 +57,10 @@ if __name__ == '__main__':
 	myLL.InsertStart(20)
 	myLL.InsertStart(30)
 	print myLL.size2()
+	print myLL.size()
+	myLL.InsertEnd(25)
+	print myLL
+	print myLL.size()
+	myLL.InsertStart(35)
+	print myLL
 	print myLL.size()
