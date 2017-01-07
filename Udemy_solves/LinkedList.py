@@ -22,7 +22,7 @@ class LinkedList(object):
 			self._head = newNode
 
 	#O(1) since 		
-	def size(self):
+	def __len__(self):
 		return self._count
 
 	#O(N) since we have to traverse all the way to the end
@@ -57,10 +57,10 @@ if __name__ == '__main__':
 	myLL.InsertStart(20)
 	myLL.InsertStart(30)
 	print myLL.size2()
-	print myLL.size()
+	print len(myLL)
 	myLL.InsertEnd(25)
 	print myLL
-	print myLL.size()
+	print len(myLL)
 	myLL.InsertStart(35)
 	print myLL
-	print myLL.size()
+	print len(myLL)
