@@ -3,12 +3,12 @@ class Node(object):
 	
 	def __init__(self,data):
 		self._data = data
-		self._NextNode = None
+		self._NextNode = None #Reference
 
 class LinkedList(object):
 	
 	def __init__(self):
-		self._head = None  # the head is always the root node, like tree we cannot have index to reach a particular value or location
+		self._head = None  # the head is always the root node (reference), like tree we cannot have index to reach a particular value or location
 		self._count =0
 
 		#O(1) time complexity insertion
@@ -48,6 +48,7 @@ class LinkedList(object):
 		ll =[]
 		while tempLL:
 			ll.append(tempLL._data)
+			#print tempLL,tempLL._NextNode
 			tempLL = tempLL._NextNode
 		return str(ll)
 
@@ -60,7 +61,8 @@ if __name__ == '__main__':
 	print len(myLL)
 	myLL.InsertEnd(25)
 	print myLL
-	print len(myLL)
+	#print len(myLL)
 	myLL.InsertStart(35)
 	print myLL
 	print len(myLL)
+	print myLL
