@@ -8,7 +8,7 @@ class Node(object):
 class LinkedList(object):
 	
 	def __init__(self):
-		self._head = None  # the head is always the root node (reference), like tree we cannot have index to reach a particular value or location
+		self._head = None  # the head is always the root node (reference to the first node), like tree we cannot have index to reach a particular value or location
 		self._count =0
 
 		#O(1) time complexity insertion
