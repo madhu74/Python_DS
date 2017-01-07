@@ -18,7 +18,7 @@ class LinkedList(object):
 		if not self._head:
 			self._head = newNode
 		else:
-			newNode.NextNode = self._head
+			newNode._NextNode = self._head
 			self._head = newNode
 
 	#O(1) since 		
