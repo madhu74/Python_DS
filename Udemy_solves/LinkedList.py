@@ -33,6 +33,7 @@ class LinkedList(object):
 			total  = total + 1
 			tempLL = tempLL._NextNode
 		return total
+
 	#O(N) complexity since we have to traverse all the way to the end of the LinkedList to insert the data
 	def InsertEnd(self,data):
 		self._count = self._count + 1
@@ -42,6 +43,52 @@ class LinkedList(object):
 			tempLL = tempLL._NextNode
 		tempLL._NextNode = newNode
 		#self._head = tempLL
+
+	def remove_buggy(self,data): #Need to test
+		if self._head is None:
+			return
+		previousNode = None
+		currentNode  = self._head
+
+		while currentNode._data != data:
+			previousNode = currentNode
+			currentNode = currentNode._NextNode
+
+		if previousNode is None:
+			self._count = self._count - 1
+			self._head = currentNode._NextNode
+			
+		else:
+			self._count = self._count - 1
+			previousNode._NextNode = currentNode._NextNode
+
+	#O(N) complexity since we have to traverse to find the data
+	def deleteNode(self,data): #this should work
+		temp = self._head
+		if temp is None:
+			return
+
+		if temp is not None:
+			if temp._data == data:
+				self._head = temp._NextNode
+				temp = None
+				self._count = self._count -1
+				return
+
+		while temp is not None:
+			if temp._data == data:
+				break
+			previousNode = temp
+			temp = temp._NextNode
+
+		if temp is None:
+			return
+		
+		previousNode._NextNode = temp._NextNode
+		self._count = self._count -1
+		temp =None
+
+
 
 	def __str__(self):
 		tempLL = self._head
@@ -65,4 +112,6 @@ if __name__ == '__main__':
 	myLL.InsertStart(35)
 	print myLL
 	print len(myLL)
+	myLL.deleteNode(30)
 	print myLL
+	print len(myLL)
