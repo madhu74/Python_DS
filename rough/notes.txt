@@ -14,3 +14,13 @@ if __len__() exist then __bool__() is automatically defined.
 
 leetcode
 geeksforgeeks
+
+https://jeffknupp.com/blog/2013/04/07/improve-your-python-yield-and-generators-explained/ - generators
+http://stackoverflow.com/questions/9983547/comparing-two-generators-in-python
+http://stackoverflow.com/questions/4687170/how-to-insert-item-into-c-char-p-array ctype
+''' 
+
+k = int(count)*py_object
+l = k() # l is an array of size count
+
+'''
