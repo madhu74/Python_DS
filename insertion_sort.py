@@ -1,4 +1,4 @@
-'''this the main operation in insertion-sort is like a typical insert operation in a list or an array, 
+'''the main operation in insertion-sort is like a typical insert operation in a list or an array, 
 we have to make place for the new value insde the array or the list (ref: j=j-1(insert),j=j+1(remove) )'''
 
 def insertion_sort(data):
