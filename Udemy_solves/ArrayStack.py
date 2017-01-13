@@ -46,6 +46,3 @@ if __name__ == '__main__':
 	print myStack.isEmpty()
 	print myStack.Pop()
 	print myStack.Top()
-
-
-
