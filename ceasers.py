@@ -1,3 +1,4 @@
+''' Simple encryption and decryption algorithm'''
 class Ceasers(object):
 	
 	def __init__(self,shift):
