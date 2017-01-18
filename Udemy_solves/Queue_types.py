@@ -26,13 +26,14 @@ class Queue1(object):
 		if self.isEmpty():
 			raise Empty('Queue is empty')
 
-		if 0 < self._size < (len(self._data)//4):  #reducing the size of the queue
-			self.resize((len(self._data)//2))
-
 		answer = self._data[self._front]
 		self._data[self._front] = None
 		self._front = (self._front+1) % len(self._data) # using arrays circularly 
 		self._size = self._size - 1
+		
+		if 0 < self._size < (len(self._data)//4):  #reducing the size of the queue
+			self._resize((len(self._data)//2))
+
 		return answer
 
 	def enqueue(self,value):
@@ -40,13 +41,13 @@ class Queue1(object):
 		we do not explicitly maintain an instance variable for the back of the queue, we
 		compute the location of the next opening based on the formula: avail = (self. front + self. size) % len(self. data) """
 		if self._size == len(self._data):
-			self.resize(self._size*2)
+			self._resize(self._size*2)
 		insert_index = (self._front + self._size) % len(self._data)
 		self._data[insert_index] = value
 		self._size = self._size + 1
 
 
-	def resize(self,mag):
+	def _resize(self,mag):
 		old = self._data
 		self._data = [None]*mag
 		k = self._front
