@@ -28,3 +28,7 @@ l = k() # l is an array of size count
 http://robertheaton.com/2014/02/09/pythons-pass-by-object-reference-as-explained-by-philip-k-dick/
 http://stackoverflow.com/questions/8701500/python-class-instance-variables-and-class-variables
 http://stackoverflow.com/questions/14546178/does-python-have-a-stack-heap-and-how-is-memory-managed
+# STACKS https://www.youtube.com/watch?v=jos1Flt21is&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&index=19
+# STACK https://www.youtube.com/watch?v=MeRb_1bddWg&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&index=20
+# infix to postfix https://gist.github.com/mycodeschool/7867739
+#prefix evaluation https://gist.github.com/mycodeschool/7702441
