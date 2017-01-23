@@ -23,7 +23,7 @@ class AVL(object):
 	def _calculateBalance(self,node):
 
 		if not node:
-			return 0 #have to check 
+			return 0 #have to check
 
 		return self._calculateHeight(node.leftChild) - self._calculateHeight(node.rightChild)
 
