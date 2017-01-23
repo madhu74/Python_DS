@@ -57,8 +57,9 @@ class BinarySearchTree(object):
 
 		if data < node._data:
 			node._leftChild = self._removeValue(data,node._leftChild)  #we have to update the reference manually once the value have been deleted
+			#We have to tell the parent that this node has been updated. since we are travelling through references
 
-		if data > node._data:
+		elif data > node._data:
 			node._rightChild = self._removeValue(data,node._rightChild) #we have to update the reference manually once the value have been deleted
 
 		else:
